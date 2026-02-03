@@ -1,0 +1,7 @@
+Build Image (Ubuntu + Go): 648.67 MB
+Run Image (Alpine + Binary): 10.33 MB
+
+Difference: The build image is huge (over 600MB) because it contains the entire Ubuntu operating system, 
+package managers, and the Go compiler tools required to build the source code. The run image is 
+significantly smaller (only ~10MB) because it uses the lightweight Alpine Linux distribution and contains 
+only the compiled binary executable, discarding all the heavy build tools and intermediate files.
